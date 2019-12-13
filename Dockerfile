@@ -1,5 +1,7 @@
 FROM node:12-alpine
 
+RUN apk add --update make git
+
 ONBUILD ARG NODE_ENV=development
 
 ONBUILD ARG RUN_ESLINT=false
